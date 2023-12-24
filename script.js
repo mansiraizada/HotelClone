@@ -37,6 +37,17 @@ gsap.from('nav', {
     duration: 3,
 })
 
+gsap.to('#page1 h1, #page1 h3', {
+    scale: 0.5,
+    scrollTrigger: {
+        trigger: '#page1 h1, #page1 h3',
+        scroller: '#main',
+        scrub: 2,
+        start: "top 6%",
+        end: "top 2%",
+        markers: true
+    }
+})
 var h1 = document.querySelectorAll('.effect');
 
 h1.forEach(function (elem) {
