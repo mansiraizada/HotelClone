@@ -44,8 +44,7 @@ gsap.to('#page1 h1, #page1 h3', {
         scroller: '#main',
         scrub: 2,
         start: "top 6%",
-        end: "top 2%",
-        markers: true
+        end: "top 2%"
     }
 })
 var h1 = document.querySelectorAll('.effect');
